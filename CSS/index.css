@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-transform: capitalize;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #525659;
+    margin: 0;
+}
+body > div {
+    margin-bottom: 5px;
+}
+img {
+    max-width: 100%;
+}
+/* @media (max-width:991px) {
+    .plant-img {
+        text-align: center;
+    }
+} */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    flex-flow: row-reverse;
+}
+.logo img {
+    margin: 20px 10px 10px 0;
+}
+.plants {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.by {
+    color: #777;
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.by span {
+    color:#09bfde;
+    margin-left: 5px;
+}
+@media (max-width: 991px) {
+    .plants {
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+table {
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+table tr td {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+table tr td:not(:first-of-type) {
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    font-weight: bold;
+}
+table thead tr td {
+    font-weight: bold;
+    color: #a2e9f0
+}
+/* ######@################################ */
+/* ######@################################ */
+.page-1 {
+    background: white;
+}
+.page-1 .plants .text-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #040b50;
+}
+.page-1 .plants .text-landing p {
+    background: #a2e9f1;
+    font-size: 20px;
+    font-weight: 700;
+}
+.page-1 .plants .text-landing h1 {
+    font-size: 85px;
+    text-align: center;
+    margin-top: 25px;
+}
+@media (max-width: 991px) {
+    .page-1 .plants .text-landing {
+        order: -1
+    }
+    .page-1 .plants .image {
+        text-align: center;
+        min-width: 260px;
+    }
+    .page-1 .plants .image img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .page-1 .plants .text-landing h1 {
+        font-size: 65px;
+    }
+}
+/* ################################# */
+.page-2 {
+    background: #040b50;
+}
+.page-2 .plants {
+    justify-content: space-between;
+    padding: 0 70px;
+
+}
+.page-2 .plants .plant-text {
+
+}
+.page-2 .plants .plant-text h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.page-2 .plants .plant-text ol {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.page-2 .plants .plant-text ol li {
+    margin-bottom: 12px;
+}
+.page-2 .plants .plant-text ol > li:first-of-type ul li:first-of-type,
+.page-2 .plants .plant-text ol > li:nth-of-type(4) ul li:first-of-type,
+.page-2 .plants .plant-text ol > li:nth-of-type(5) ul li:first-of-type{
+    margin-top: 12px;
+    
+}
+.page-2 .plants .plant-text ol li ul {
+    margin-left: 10px;
+}
+.page-2 .plants .plant-img {
+    min-width: 260px;
+}
+.page-2 .plants .plant-img img {
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+    .page-2 .plants .plant-img {
+        text-align: center;
+    }
+}
+/*  */
+.page-3 {
+    background: white;
+}
+.page-3 > h3 {
+    font-size: 40px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+.page-3 > h3 span {
+    font-size: 28px;
+    font-weight: 600;
+}
+.page-3 .plants .plant-text {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+    color: #040b50;
+
+}
+@media (max-width:991px) {
+    .page-3 .plants {
+        text-align: center;
+    }
+    .page-3 .plants .plant-text {
+        order:-1;
+        margin-bottom: 30px;
+    }
+}
+.page-3 .plants .plant-text > div {
+    padding: 20px;
+    box-shadow: 1px 1px 7px 0px #ccc;
+}
+.page-3 .plants .plant-text .auto {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.page-3 .plants .plant-text > div h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.page-3 .plants .plant-text > div > span:first-of-type {
+    font-size: 50px;
+    font-weight: 700;
+}
+.page-3 .plants .plant-text .fr1 {
+    grid-row: span 3;
+    grid-column: span 1;
+}
+.page-3 .plants .plant-text .fr1 h4 + span {
+    margin-bottom: 50px;
+    display: block;
+}
+.page-3 .plants .plant-text .fr1 .oou {
+    display: flex;
+    align-items: flex-end;
+}
+.page-3 .plants .plant-text .fr1 .oou span:first-of-type {
+    font-size: 17px;
+    font-weight: 600;
+}
+.page-3 .plants .plant-text .fr1 .oou span:last-of-type {
+    font-size: 33px;
+    margin-left: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #09bcd0;
+}
+/* \ */
+.page-4 {
+    background: white;
+}
+.page-4 > h3 {
+    font-size: 40px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+.page-4 > h3 span {
+    font-size: 28px;
+    font-weight: 600;
+}
+.page-4 .plants .plant-tex {
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .page-4 .plants .plant-tex {
+        width: 90%;
+    }
+}
+.page-4 .plants .plant-tex h3:first-of-type {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.page-4 .plants .plant-tex p {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    padding-left: 20px;
+}
+.page-4 .plants .plant-tex p span {
+    color: #09bcd0;
+    font-weight: 700;
+}
+.page-4 .plants .plant-tex h3:last-of-type {
+    font-weight: 600;
+    margin-top: 30px;
+}
+@media (max-width: 991px) {
+    .page-4 .plants .plant-img {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .page-4 .plants .plant-img img {
+        max-width: 100%;
+    }
+}
+/* / */
+.page-5 {
+    background: #040b50;
+    color: white;
+}
+.page-5 h2 {
+    font-size: 40px;
+    padding: 50px 0 40px 65px;
+}
+.page-5 P {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 40px 30px;
+    font-size: 19px;
+}
+@media (max-width:991px) {
+    .page-5 .plants {
+        text-align: center;
+    }
+}
+/* ccc */
+.page-6 {
+    background: #040b50;
+    color: white;
+    
+}
+.page-6 h2 {
+    font-size: 40px;
+    padding: 50px 0 40px 65px;
+}
+.page-6 P {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 40px 30px;
+    font-size: 19px;
+}
+.page-6 .plants {
+    align-items: flex-start;
+}
+@media (max-width: 991px) {
+    /* .page-6 {
+        padding-bottom: 40px;
+    } */
+    .page-6 .plants {
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-6 .plants .tabel:first-of-type {
+        margin-bottom: 50px;
+    }
+}
+.page-6 .plants h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.page-6 > h3 span:first-of-type,
+.page-6 .plants h3 span:first-of-type {
+    color: #a2e9f1;
+}
+.page-6 > h3 span:last-of-type,
+.page-6 .plants h3 span:last-of-type {
+    color: #777;
+    font-size: 14px;
+}
+.page-6 .plants .tab-s:first-of-type {
+    margin-bottom: 50px;
+}
+.page-6 .plants table {
+    width: 400px;
+}
+/*  */
+.page-7 {
+    background: #040b50;
+}
+.page-7 .plnats {
+    justify-content: space-around;
+}
+@media (max-width:991px) {
+    .page-7 .plants {
+        text-align: center;
+    }
+}
+.page-7 .plants .text h2 {
+    font-size: 90px;
+    color: white
+}
