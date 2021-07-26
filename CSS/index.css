@@ -9,17 +9,9 @@ body {
     background: #525659;
     margin: 0;
 }
-body > div {
-    margin-bottom: 5px;
-}
 img {
     max-width: 100%;
 }
-/* @media (max-width:991px) {
-    .plant-img {
-        text-align: center;
-    }
-} */
 ul {
     list-style: none;
 }
